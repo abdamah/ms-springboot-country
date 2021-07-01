@@ -16,7 +16,7 @@ import java.util.Locale;
 public class CountryController {
 
     @GetMapping("/all")
-    public ResponseEntity<?> getAll() {
+    public ResponseEntity<List<Country>> getAll() {
         //We can use RestTemplate to consume api
             //String url ="https://restcountries.eu/rest/v2/all";
 
