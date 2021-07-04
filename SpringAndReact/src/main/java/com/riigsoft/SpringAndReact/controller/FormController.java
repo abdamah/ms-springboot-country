@@ -2,12 +2,14 @@ package com.riigsoft.SpringAndReact.controller;
 
 import com.riigsoft.SpringAndReact.model.ClientForm;
 import com.riigsoft.SpringAndReact.model.Elements;
+import com.riigsoft.SpringAndReact.model.Save;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/v1/form")
@@ -21,7 +23,7 @@ import java.util.List;
                         new Elements(
                                 "title1",
                                 List.of(
-                                        new Elements.Save (
+                                        new Save(
                                                 "type1",
                                                 "render2",
                                                 "save1",
